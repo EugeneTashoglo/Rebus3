@@ -1,0 +1,59 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\вершина.jpg" />
+    <None Remove="Resources\глагол.png" />
+    <None Remove="Resources\конус.jpg" />
+    <None Remove="Resources\коньки.jpeg" />
+    <None Remove="Resources\Междометие.png" />
+    <None Remove="Resources\Местоимение.png" />
+    <None Remove="Resources\Предложение.png" />
+    <None Remove="Resources\прилагательное.png" />
+    <None Remove="Resources\пять.jpg" />
+    <None Remove="Resources\спорт.jpeg" />
+    <None Remove="Resources\суффикс.png" />
+    <None Remove="Resources\физкультура.jpeg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignThemes" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\вершина.jpg" />
+    <Resource Include="Resources\глагол.png" />
+    <Resource Include="Resources\конус.jpg" />
+    <Resource Include="Resources\коньки.jpeg" />
+    <Resource Include="Resources\Междометие.png" />
+    <Resource Include="Resources\Местоимение.png" />
+    <Resource Include="Resources\Предложение.png" />
+    <Resource Include="Resources\прилагательное.png" />
+    <Resource Include="Resources\пять.jpg" />
+    <Resource Include="Resources\спорт.jpeg" />
+    <Resource Include="Resources\суффикс.png" />
+    <Resource Include="Resources\физкультура.jpeg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
